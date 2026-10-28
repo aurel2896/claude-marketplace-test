@@ -81,6 +81,40 @@
         "url": "https://github.com/mattpocock/skills.git",
         "path": "skills"
       }
+    },
+    {
+      "name": "subset-strict-false",
+      "displayName": "Test 7: full URL + strict false + 11-skill list",
+      "license": "MIT",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/mattpocock/skills.git",
+        "path": "skills"
+      },
+      "skills": [
+        "./engineering/grill-with-docs",
+        "./engineering/to-spec",
+        "./engineering/to-tickets",
+        "./engineering/implement",
+        "./engineering/code-review",
+        "./engineering/retro",
+        "./engineering/setup-matt-pocock-skills",
+        "./productivity/grilling",
+        "./engineering/domain-modeling",
+        "./engineering/tdd",
+        "./productivity/writing-for-agents"
+      ],
+      "strict": false
+    },
+    {
+      "name": "subdir-strict-false",
+      "displayName": "Test 8: full URL + strict false, no list",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/mattpocock/skills.git",
+        "path": "skills"
+      },
+      "strict": false
     }
   ]
 }
