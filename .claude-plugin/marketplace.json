@@ -1,0 +1,32 @@
+{
+  "name": "aurel-marketplace-test",
+  "owner": {
+    "name": "Aurel Nazmiu"
+  },
+  "description": "Test: does claude.ai honour a marketplace entry skills list?",
+  "plugins": [
+    {
+      "name": "matt-pocock-skills",
+      "displayName": "Matt Pocock subset test",
+      "license": "MIT",
+      "source": {
+        "source": "git-subdir",
+        "url": "mattpocock/skills",
+        "path": "skills"
+      },
+      "skills": [
+        "./engineering/grill-with-docs",
+        "./engineering/to-spec",
+        "./engineering/to-tickets",
+        "./engineering/implement",
+        "./engineering/code-review",
+        "./engineering/retro",
+        "./engineering/setup-matt-pocock-skills",
+        "./productivity/grilling",
+        "./engineering/domain-modeling",
+        "./engineering/tdd",
+        "./productivity/writing-for-agents"
+      ]
+    }
+  ]
+}
