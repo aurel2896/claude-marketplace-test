@@ -6,8 +6,13 @@
   "description": "Test: does claude.ai honour a marketplace entry skills list?",
   "plugins": [
     {
-      "name": "matt-pocock-skills",
-      "displayName": "Matt Pocock subset test",
+      "name": "control",
+      "displayName": "Test 1: control",
+      "source": "./plugins/control"
+    },
+    {
+      "name": "subset-test",
+      "displayName": "Test 2: git-subdir + 11-skill list",
       "license": "MIT",
       "source": {
         "source": "git-subdir",
@@ -27,6 +32,23 @@
         "./engineering/tdd",
         "./productivity/writing-for-agents"
       ]
+    },
+    {
+      "name": "subdir-no-list",
+      "displayName": "Test 3: git-subdir, no list",
+      "source": {
+        "source": "git-subdir",
+        "url": "mattpocock/skills",
+        "path": "skills"
+      }
+    },
+    {
+      "name": "github-root",
+      "displayName": "Test 4: github root",
+      "source": {
+        "source": "github",
+        "repo": "mattpocock/skills"
+      }
     }
   ]
 }
